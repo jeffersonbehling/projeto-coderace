@@ -37,6 +37,17 @@ class EventsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
+        $this->addBehavior('Search.Search');
+
+        $this->searchManager()
+            ->add('name', 'Search.Callback', [
+                'callback' => function ($query, $args, $manager) {
+                    $name = explode(' ', trim($args['name']));
+                    foreach ($name as $value) {
+                        $query->where(["Events.name LIKE " => "%$value%"]);
+                    }
+                }
+            ]);
     }
 
     /**

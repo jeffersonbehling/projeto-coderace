@@ -4,6 +4,13 @@
  * @var \Cake\Datasource\EntityInterface $event
  */
 ?>
+<style>
+    img.event-img {
+        width: 600px;
+        height: 300px;
+        margin-right: 10%;
+    }
+</style>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __d('events', 'Actions') ?></li>
@@ -27,6 +34,10 @@
             <td><?= h($event->created) ?></td>
         </tr>
     </table>
+    <h4><?= __d('events', 'Image') ?></h4>
+    <div class="col-lg-4 col-md-4">
+        <?php echo $this->Html->image('uploads/' . $event->image, ['class' => 'event-img']);?>
+    </div>
     <div class="row">
         <h4><?= __d('events', 'Description') ?></h4>
         <?= $this->Text->autoParagraph(h($event->description)); ?>

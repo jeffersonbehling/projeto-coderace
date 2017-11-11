@@ -52,14 +52,16 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
 //    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
-    Router::connect('/', ['plugin' => null, 'plugin' => 'Accounts/Auth', 'controller' => 'Users', 'action' => 'login']);
+    Router::connect('/', ['plugin' => null, 'plugin' => 'Interests', 'controller' => 'Interests', 'action' => 'index']);
 
-    Router::connect('events', ['plugin' => null, 'plugin' => 'Events', 'controller' => 'Events', 'action' => 'index']);
+    Router::connect('/events', ['plugin' => null, 'plugin' => 'Events', 'controller' => 'Events', 'action' => 'index']);
+
+    Router::connect('/interests', ['plugin' => null, 'plugin' => 'Interests', 'controller' => 'Interests', 'action' => 'index']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    $routes->connect('/pages/*', ['plugin' => null, 'plugin' => 'Interests', 'controller' => 'Interests', 'action' => 'index']);
 
 //    $routes->connect('/accounts', ['plugin' => 'CakeDC/Users', 'controller' => 'Users', 'action' => 'index']);
 
