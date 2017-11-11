@@ -48,17 +48,17 @@ O Borá Lá é dividido em 3 partes:
 
 ## 1º Passo
 ```
-git clone https://github.com/jeffersonbehling/projeto-login-auth.git
+git clone https://github.com/jeffersonbehling/projeto-coderace.git
 ```
 Depois de clonar o projeto, execute no terminal:
 ```
-cd projeto-login-auth
+cd projeto-coderace
 ```
 Depois disso, execute: 
 ```
 composer update
 ```
-E por fim, crie duas pastas:
+E por fim, crie a pasta:
 ```
 mkdir tmp
 ```
@@ -80,7 +80,7 @@ Após isso, será criada uma pasta: ```webroot/uploads```, agora você terá que
 ## 2º Passo
 - Crie a base de dados ```projeto_coderace```
 - Verifique as configurações em ```config/datasources/config.php```
-- Dentro de ```projeto-login-auth```
+- Dentro de ```projeto-coderace```
 - Execute a criação das tabelas
 ```
 composer db-migrate
