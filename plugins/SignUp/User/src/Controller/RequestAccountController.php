@@ -26,8 +26,8 @@ class RequestAccountController extends AppController
     public function initialize()
     {
         parent::initialize();
-
         $this->loadModel('SignUp/User.Users');
+        $this->loadModel('SignUp/User.UsersLikes');
 
         if ($this->Auth->user() && $this->request->url) {
             $this->Flash->error(__d('SignUp/user', 'Logoff before continue'));
@@ -44,6 +44,7 @@ class RequestAccountController extends AppController
 
         $usersTable = $this->getUsersTable();
         $user = $usersTable->newEntity();
+        $user->active = true;
         $validateEmail = (bool)Configure::read('Users.Email.validate');
         $useTos = (bool)Configure::read('Users.Tos.required');
         $tokenExpiration = Configure::read('Users.Token.expiration');
@@ -88,11 +89,9 @@ class RequestAccountController extends AppController
             return;
         }
 
-        $this->sendMailAdmin($user->id);
-
+//        $this->sendMailAdmin($user->id);
         $this->Flash->success(__d('SignUp/user', 'You have registered successfully, please log in'));
-
-        return $this->redirect(['plugin' => 'Accounts/Auth', 'controller' => 'Users', 'action' => 'login']);
+        return $this->redirect(['controller' => 'UsersLikes', 'action' => 'add', $user->id]);
     }
 
     private function sendMailAdmin($id)
