@@ -118,9 +118,4 @@ Configure um e-mail para que seja possível enviar e-mails para os Administrador
 ```
 
 ## 5º Passo
-- Acesse ```/projeto-login-auth/login``` e faça login.
-
-## Tela de Login
-
-[Login](https://github.com/jeffersonbehling/projeto-login-auth/blob/master/webroot/img/screenshots/login.png)
-![alt text](https://github.com/jeffersonbehling/projeto-login-auth/blob/master/webroot/img/screenshots/login.png)
+- Acesse ```/projeto-coderace``` e faça login.
