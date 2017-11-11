@@ -22,6 +22,7 @@ class InterestsController extends AppController
         $this->loadModel('Events.Events');
         $this->loadModel('SignUp/User.Users');
         $this->loadModel('Photos.Photos');
+        $this->loadModel('SignUp/User.UsersLikes');
     }
 
     /**
@@ -111,13 +112,6 @@ class InterestsController extends AppController
         $this->Flash->error(__d('interests', 'Falha ao adicionar você ao evento.'));
 
         return $this->redirect(['action' => 'index']);
-    }
-
-    public function userProfile($id)
-    {
-        $user = $this->Users->get($id);
-
-        $this->set(compact('user'));
     }
 
     /**

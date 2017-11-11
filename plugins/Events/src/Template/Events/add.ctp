@@ -19,7 +19,7 @@
             echo $this->Form->control('time_inicial', ['label' => __d('events', 'Hora de Início')]);
             echo $this->Form->control('location', ['label' => __d('events', 'Localização')]);
             echo $this->Form->control('image', ['label' => __d('events', 'Imagem'), 'type' => 'file']);
-            echo $this->Form->control('whatsapp_group', ['label' => __d('events', 'Grupo do WhatsApp'), 'type' => 'file']);
+            echo $this->Form->control('whatsapp_group', ['label' => __d('events', 'Grupo do WhatsApp')]);
             echo $this->Form->control('description', ['label' => __d('events', 'Descrição')]);
         ?>
     </fieldset>

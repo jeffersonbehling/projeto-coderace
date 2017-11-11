@@ -44,7 +44,7 @@ use Cake\Routing\Router;
             <?php
             $email_hash = md5(strtolower(trim($user->email)));
             $url = 'https://www.gravatar.com/avatar/' . $email_hash . '?s=48'; ?>
-        <img src="<?= $url ?>" alt="<?= $user->first_name ?>" title="<?= $user->first_name ?>" class="profile-img"s>
+            <img src="<?= $url ?>" alt="<?= $user->first_name ?>" title="<?= $user->first_name ?>" class="profile-img">
 
     <?php endforeach; ?>
     <br>
