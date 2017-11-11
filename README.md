@@ -11,14 +11,15 @@ O Sistema irá disponibilizar para o usuário um campo de filtro no qual ele pod
 ## Estrutura
 
 O x é dividido em 3 partes:
--Usuarios
--Rolês
--Locais
+*Usuarios
+*Rolês
+*Locais
 
-# Usuarios
--Nome
--E-mail
--Gostos(aqui o usuario descreve os seus gostos, essa informação irá aparecer no perfil dela)
+### Usuarios
+*Nome
+*E-mail
+*Gostos(aqui o usuario seleciona os seus gostos, essa informação irá aparecer no perfil dela)
+
 ## 1º Passo
 ```
 git clone https://github.com/jeffersonbehling/projeto-login-auth.git
