@@ -89,11 +89,11 @@ class EventsController extends AppController
             }
 
             if ($this->Events->save($event)) {
-                $this->Flash->success(__('The event has been saved.'));
+                $this->Flash->success(__('O evento foi salvo.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The event could not be saved. Please, try again.'));
+            $this->Flash->error(__('O evento não pôde ser salvo. Por favor, tente novamente.'));
         }
         $this->set(compact('event'));
         $this->set('_serialize', ['event']);

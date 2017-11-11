@@ -47,17 +47,17 @@
 </style>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __d('interests', 'Actions') ?></li>
-        <li><?= $this->Html->link(__d('interests', 'New Event'), ['plugin' => 'Events', 'controller' => 'Events', 'action' => 'add']) ?></li>
+        <li class="heading"><?= __d('interests', 'Ações') ?></li>
+        <li><?= $this->Html->link(__d('interests', 'Novo Evento'), ['plugin' => 'Events', 'controller' => 'Events', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="interests index large-9 medium-8 columns content">
     <?= $this->Form->create(); ?>
         <fieldset>
-            <h3><?= __d('soils', 'Search Events') ?></h3>
+            <h3><?= __d('soils', 'Procurar Eventos') ?></h3>
             <?php
-            echo $this->Form->control('name', ['label' => '', 'placeholder' => __d('interests', 'Query by Name')]);
-            echo $this->Form->button(__d('interests', 'Filter'), ['type' => 'submit']);
+            echo $this->Form->control('name', ['label' => '', 'placeholder' => __d('interests', 'Procure por nome')]);
+            echo $this->Form->button(__d('interests', 'Filtrar'), ['type' => 'submit']);
             echo $this->Form->end();
             ?>
         </fieldset>
@@ -86,13 +86,13 @@
         </tbody>
     <div class="paginator">
         <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __d('interests', 'first')) ?>
-            <?= $this->Paginator->prev('< ' . __d('interests', 'previous')) ?>
+            <?= $this->Paginator->first('<< ' . __d('interests', 'primeiro')) ?>
+            <?= $this->Paginator->prev('< ' . __d('interests', 'anterior')) ?>
             <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__d('interests', 'next') . ' >') ?>
-            <?= $this->Paginator->last(__d('interests', 'last') . ' >>') ?>
+            <?= $this->Paginator->next(__d('interests', 'próximo') . ' >') ?>
+            <?= $this->Paginator->last(__d('interests', 'último') . ' >>') ?>
         </ul>
-        <p><?= $this->Paginator->counter(['format' => __d('interests', 'Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
+        <p><?= $this->Paginator->counter(['format' => __d('interests', 'Página {{page}} de {{pages}}, mostrando {{current}} dado(s) de um total de {{count}}')]) ?></p>
     </div>
 </div>
 

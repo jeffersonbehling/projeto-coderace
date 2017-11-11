@@ -48,7 +48,9 @@
             "LoggingPack\\": "./plugins/LoggingPack/src",
             "Logs\\": "./plugins/Logs/src",
             "Shopping\\": "./plugins/Shopping/src",
-            "Events\\": "./plugins/Events/src"
+            "Events\\": "./plugins/Events/src",
+            "Photos\\": "./plugins/Photos/src",
+            "Interests\\": "./plugins/Interests/src"
         }
     },
     "autoload-dev": {
@@ -65,7 +67,9 @@
             "LoggingPack\\": "./plugins/LoggingPack/src",
             "Logs\\": "./plugins/Logs/src",
             "Shopping\\Test\\": "./plugins/Shopping/tests",
-            "Events\\Test\\": "./plugins/Events/tests"
+            "Events\\Test\\": "./plugins/Events/tests",
+            "Photos\\Test\\": "./plugins/Photos/tests",
+            "Interests\\Test\\": "./plugins/Interests/tests"
         }
     },
     "scripts": {
@@ -82,11 +86,14 @@
             "bin/cake migrations migrate --plugin Shopping --connection default",
             "bin/cake migrations migrate --plugin Events --connection default",
             "bin/cake migrations migrate --plugin Interests --connection default",
-            "bin/cake migrations migrate --plugin Photos --connection default"
+            "bin/cake migrations migrate --plugin Photos --connection default",
+            "bin/cake migrations migrate --plugin SignUp/User --connection default",
+            "bin/cake migrations migrate --connection default"
         ],
         "db-seed": [
             "bin/cake migrations seed --plugin Accounts/Admin --connection default",
-            "bin/cake migrations seed --plugin Accounts/Authz --connection default"
+            "bin/cake migrations seed --plugin Accounts/Authz --connection default",
+            "bin/cake migrations seed --connection default"
         ],
         "create-folder": [
             "mkdir webroot/uploads"

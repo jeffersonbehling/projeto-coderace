@@ -525,7 +525,7 @@ pre {
 }
 
 .top-bar a {
-    color: white;
+    color: #222 !important;
 }
 
 .top-bar .button {
@@ -533,7 +533,7 @@ pre {
 }
 
 .top-bar-title {
-    color: #F9F9F9;
+    color: #222 !important;
     /*font-family: "Baloo Da";*/
     font-size: 24px;
     letter-spacing: 0.01em;

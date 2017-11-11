@@ -22,6 +22,7 @@ class InterestsController extends AppController
         $this->loadModel('Events.Events');
         $this->loadModel('SignUp/User.Users');
         $this->loadModel('Photos.Photos');
+        $this->loadModel('SignUp/User.UsersLikes');
     }
 
     /**

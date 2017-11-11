@@ -4,9 +4,6 @@
     $this->layout = 'login';
 ?>
 <style>
-    body {
-        background: url(<?=  $this->Url->image('landpage_backgroundd.jpg') ?>)
-    }
     label, a {
         color: #ffffff;
     }
@@ -16,6 +13,11 @@
         border-radius: 5px;
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
+
+    .logo-borala {
+        width: 100px;
+        height: 100px;
+    }
 </style>
 
 <div class="row">
@@ -24,7 +26,7 @@
     <fieldset>
         <div class="medium-6 medium-centered large-4 large-centered columns box">
             <div class="row column log-in-form">
-                <center><?= $this->Html->image('logo-coderace.jpg', ['alt' => 'CodeRace']) ?></center>
+                <center><?= $this->Html->image('logo-borala.png', ['alt' => 'Bora Lá', 'class' => 'logo-borala']) ?></center>
                 <br>
                 <legend></legend>
                 <?= $this->Form->input('username', ['required' => true, 'label' => __d('Accounts/auth', 'Username')]) ?>

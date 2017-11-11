@@ -70,7 +70,7 @@ class UsersLikesController extends AppController
                 $this->Flash->error(__('The users like could not be saved. Please, try again.'));
             }
         }
-        return $this->redirect(['plugin' => 'Interests']);
+        return $this->redirect(['plugin' => 'Accounts/Auth', 'controller' => 'Users', 'action' => 'login']);
 
         $this->set(compact('usersLike'));
         $this->set('_serialize', ['usersLike']);
