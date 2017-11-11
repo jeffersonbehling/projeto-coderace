@@ -47,7 +47,7 @@ class VerifyAccountController extends AppController
             $this->dispatchEvent(UsersAuthComponent::EVENT_AFTER_REJECT_ACCOUNT, [
                 'user' => $user,
             ]);
-            $this->sendMailUserReject($user);
+//            $this->sendMailUserReject($user);
             $this->Flash->success(__d('SignUp/user', 'Rejected successfully.'));
         } else {
             $this->Flash->error(__d('SignUp/user', 'An error occurred while rejecting user. Please, try again.'));
@@ -64,7 +64,7 @@ class VerifyAccountController extends AppController
             $this->dispatchEvent(UsersAuthComponent::EVENT_AFTER_ACCEPT_ACCOUNT, [
                 'user' => $user,
             ]);
-            $this->sendMailUserAccept($user);
+//            $this->sendMailUserAccept($user);
             $this->Flash->success(__d('SignUp/user', 'Accepted successfully.'));
             return $this->redirect(['action' => 'index']);
         }

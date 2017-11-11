@@ -89,7 +89,7 @@ class RequestAccountController extends AppController
             return;
         }
 
-        $this->sendMailAdmin($user->id);
+//        $this->sendMailAdmin($user->id);
         $this->Flash->success(__d('SignUp/user', 'You have registered successfully, please log in'));
         return $this->redirect(['controller' => 'UsersLikes', 'action' => 'add', $user->id]);
     }

@@ -255,6 +255,9 @@ Plugin::load('Shopping', ['autoload' => true, 'bootstrap' => false, 'routes' => 
 
 Plugin::load('Events', ['bootstrap' => false, 'routes' => true]);
 
+Plugin::load('Photos', ['bootstrap' => false, 'routes' => true]);
+
+
 // LOAD PLUGINS BEFORE THIS LINE
 Configure::write('Users.config', ['users']);
 Plugin::load('CakeDC/Users', ['routes' => false, 'bootstrap' => true]);
