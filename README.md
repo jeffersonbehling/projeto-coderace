@@ -1,8 +1,9 @@
-# Nome do Sistema
+[borala](https://github.com/jeffersonbehling/projeto-login-auth/blob/master/webroot/img/logo.png)
+# Borá lá?
 
 ## Conceito
 
-O x é um aplicativo que conecta um grupo de pessoas que querem realizar atividades semelhantes em determinado local por elas definidas.
+O Borá Lá é um aplicativo que conecta um grupo de pessoas que querem realizar atividades semelhantes em determinado local por elas definidas.
 
 ## Iniciando
 
@@ -11,14 +12,30 @@ O Sistema irá disponibilizar para o usuário um campo de filtro no qual ele pod
 ## Estrutura
 
 O x é dividido em 3 partes:
-*Usuarios
-*Rolês
-*Locais
+* Usuarios
+* Rolês
+* Locais
 
 ### Usuarios
-*Nome
-*E-mail
-*Gostos(aqui o usuario seleciona os seus gostos, essa informação irá aparecer no perfil dela)
+* Nome
+* E-mail
+* Gostos(aqui o usuario seleciona os seus gostos, essa informação irá aparecer no perfil dela)
+
+### Rolês
+* Nome do rolê
+* Horario de inicio
+* Lugar
+* Grupo do WPP
+* Descrição
+* Horario que o evento foi criado(invisivel para o usuario)
+* Usuario que criou(invisivel para o usuario)
+
+### Locais
+
+* Nome
+* Endereço
+* Fotos
+
 
 ## 1º Passo
 ```
