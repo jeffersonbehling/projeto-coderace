@@ -11,14 +11,15 @@
     </ul>
 </nav>
 <div class="events form large-9 medium-8 columns content">
-    <?= $this->Form->create($event) ?>
+    <?= $this->Form->create($event, ['type' => 'file']) ?>
     <fieldset>
         <legend><?= __('Add Event') ?></legend>
         <?php
-            echo $this->Form->control('name');
-            echo $this->Form->control('time_inicial');
-            echo $this->Form->control('location');
-            echo $this->Form->control('description');
+            echo $this->Form->control('name', ['label' => __d('events', 'Name')]);
+            echo $this->Form->control('time_inicial', ['label' => __d('events', 'Start Time')]);
+            echo $this->Form->control('location', ['label' => __d('events', 'Location')]);
+            echo $this->Form->control('image', ['label' => __d('events', 'Image'), 'type' => 'file']);
+            echo $this->Form->control('description', ['label' => __d('events', 'Description')]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

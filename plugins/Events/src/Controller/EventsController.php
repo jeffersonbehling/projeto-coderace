@@ -64,6 +64,30 @@ class EventsController extends AppController
         $event = $this->Events->newEntity();
         if ($this->request->is('post')) {
             $event = $this->Events->patchEntity($event, $this->request->getData());
+
+            if(!empty($this->request->getData(['image', 'name']))) {
+                $file = $this->request->getData(['image']);
+
+                $ext = substr(strtolower(strrchr($file['name'], '.')), 1); //get the extension
+                $arr_ext = array('jpg', 'jpeg', 'gif'); //set allowed extensions
+
+                //only process if the extension is valid
+                if(in_array($ext, $arr_ext))
+                {
+                    //do the actual uploading of the file. First arg is the tmp name, second arg is
+                    //where we are putting it
+
+                    $file_name = md5(uniqid()) . '-' . time() . '.' . $ext;
+
+                    move_uploaded_file($file['tmp_name'], WWW_ROOT . 'img/uploads/' . $file_name);
+
+                    //prepare the filename for database entry
+                    $event->image = $file_name;
+                }
+            } else {
+                $event->image = 'default-event.png';
+            }
+
             if ($this->Events->save($event)) {
                 $this->Flash->success(__('The event has been saved.'));
 
