@@ -48,7 +48,7 @@
                         <?php
                             $registrationActive = Configure::read('Users.Registration.active');
                             if ($registrationActive) {
-                                echo $this->Html->link(__d('Accounts/auth', 'Sign Up'), ['plugin' => 'SignUp/User', 'controller' => 'RequestAccount', 'action' => 'register']);
+                                echo $this->Html->link(__d('Accounts/auth', 'Sign Up'), ['plugin' => 'SignUp/User', 'controller' => 'Likes', 'action' => 'index']);
                             }
                             if (Configure::read('Users.Email.required')) {
                                 if ($registrationActive) {

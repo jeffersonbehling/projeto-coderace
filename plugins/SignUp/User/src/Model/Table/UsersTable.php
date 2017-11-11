@@ -1,5 +1,5 @@
 <?php
-namespace SignUp\Employee\Model\Table;
+namespace SignUp\User\Model\Table;
 
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
@@ -36,6 +36,11 @@ class UsersTable extends Table
             'foreignKey' => 'user_id',
             'className' => 'SignUp/User.SocialAccounts'
         ]);
+        $this->hasMany('UsersLikes', [
+            'foreignKey' => 'id',
+            'className' => 'UsersLikes'
+        ]);
+
     }
 
     /**

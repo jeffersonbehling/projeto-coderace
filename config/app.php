@@ -192,11 +192,11 @@ return [
             'host' => 'ssl://smtp.gmail.com',
             'port' => 465,
             'timeout' => 30,
-            'username' => 'YOUR_EMAIL@gmail.com',
-            'password' => 'YOUR_PASSWORD',
+            'username' => 'sup.aplicacao@gmail.com',
+            'password' => 'supapp@@',
             'client' => null,
             'tls' => null,
-            'url' => env('YOUR_EMAIL@gmail.com', null),
+            'url' => env('sup.aplicacao@gmail.com', null),
         ],
     ],
 
@@ -212,7 +212,7 @@ return [
     'Email' => [
         'default' => [
             'transport' => 'default',
-            'from' => 'YOUR_EMAIL@EMAIL.COM',
+            'from' => 'sup.aplicacao@gmail.com',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
         ],
