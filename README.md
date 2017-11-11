@@ -5,7 +5,7 @@
 
 O Borá Lá é um aplicativo que conecta um grupo de pessoas que querem realizar atividades semelhantes na região, esse app foi desenvolvido pensado na região do vale do jaguari, aonde as cidades são pequenas e a quantidade de lugares para sair e os eventos são muito limitados.
 
-A ideia é simplesmente conectar pessoas que querem sair e ter uma experiencia mais personaliada. Aonde o principal diferencial do Borá Lá é que o processo de criação dos acontecimentos é simplificado e ocorre a partir do interesse das pessoas em sair para depois ser criado o "evento", diferentemente do Facebook eventos, que é mais voltado a criação de eventos profissionais e organizados.
+A ideia é simplesmente conectar pessoas que querem sair e ter uma experiencia mais personalizada. Aonde o principal diferencial do Borá Lá é que o processo de criação dos acontecimentos é simplificado e ocorre a partir do interesse das pessoas em sair para depois ser criado o "evento", diferentemente do Facebook eventos, que é mais voltado a criação de eventos profissionais e organizados.
 
 Exemplo: 
 * Bruno quer sair no sabado mas não tem nada acontecendo na cidade dele, então ele marca que tem interesse de sair, de ir beber na praça da cidade e ficar conversando
