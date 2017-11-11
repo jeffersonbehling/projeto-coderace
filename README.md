@@ -8,6 +8,17 @@ O x é um aplicativo que conecta um grupo de pessoas que querem realizar ativida
 
 O Sistema irá disponibilizar para o usuário um campo de filtro no qual ele poderá selecionar o local que ele possui interesse em sair
 
+## Estrutura
+
+O x é dividido em 3 partes:
+-Usuarios
+-Rolês
+-Locais
+
+# Usuarios
+-Nome
+-E-mail
+-Gostos(aqui o usuario descreve os seus gostos, essa informação irá aparecer no perfil dela)
 ## 1º Passo
 ```
 git clone https://github.com/jeffersonbehling/projeto-login-auth.git
