@@ -40,13 +40,7 @@ class PhotosTable extends Table
         $this->belongsTo('Events', [
             'foreignKey' => 'events_id',
             'joinType' => 'INNER',
-            'className' => 'Photos.Events'
-        ]);
-        $this->belongsToMany('Phinxlog', [
-            'foreignKey' => 'photo_id',
-            'targetForeignKey' => 'phinxlog_id',
-            'joinTable' => 'photos_phinxlog',
-            'className' => 'Photos.Phinxlog'
+            'className' => 'Events.Events'
         ]);
     }
 

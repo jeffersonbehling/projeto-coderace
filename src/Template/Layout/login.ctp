@@ -13,8 +13,13 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'CodeRace';
+$cakeDescription = 'Borá Lá';
 ?>
+<style>
+    .top-bar-title a {
+        color: #222 !important;
+    }
+</style>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,7 +43,7 @@ $cakeDescription = 'CodeRace';
 
 <div class="top-bar">
     <div class="top-bar-title">
-        <?= $this->Html->link('Projeto CodeRace', ['plugin' => 'Accounts/Auth', 'controller' => 'Users', 'action' => 'login']) ?>
+        <?= $this->Html->link('Borá Lá', ['plugin' => 'Accounts/Auth', 'controller' => 'Users', 'action' => 'login']) ?>
     </div>
 </div>
 
@@ -50,13 +55,14 @@ $cakeDescription = 'CodeRace';
 <footer class="footer">
     <div class="row">
         <div class="small-12 columns">
-            <p class="slogan">Projeto CodeRace</p>
+            <p class="slogan">Borá Lá</p>
             <p class="copywrite">Instituto Federal Farroupilha - Campus São Vicente do Sul</p>
-            <p class="copywrite">Jefferson Vantuir © <?= date('Y') ?></p>
-            <p class="copywrite">sup.aplicacao@gmail.com - (xx) 9999-999</p>
+            <p class="copywrite">Equipe Cake © <?= date('Y') ?></p>
+            <p class="copywrite">sup.aplicacao@gmail.com</p>
         </div>
     </div>
 </footer>
+
 
 <script>
     $(document).foundation();

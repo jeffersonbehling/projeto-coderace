@@ -13,7 +13,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = 'Projeto CodeRace';
+$cakeDescription = 'Borá Lá';
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,8 +49,8 @@ $cakeDescription = 'Projeto CodeRace';
         <span data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle="my-panel-left"></button>
         </span>
-        <span class="show-for-large separator"><?= $this->Html->link('Projeto CodeRace', ['plugin' => null, 'controller' => 'pages']) ?></span>
-        <span class="hide-for-large"><?= $this->Html->link('Projeto CodeRace', ['plugin' => null, 'controller' => 'pages']) ?></span>
+        <span class="show-for-large separator" style="color: #222 !important;"><?= $this->Html->link('Borá Lá', ['plugin' => null, 'controller' => 'pages']) ?></span>
+        <span class="hide-for-large" style="color: #222 !important;"><?= $this->Html->link('Borá Lá', ['plugin' => null, 'controller' => 'pages']) ?></span>
     </div>
     <div id="responsive-menu" class="show-for-large">
         <div class="top-bar-left">
@@ -112,10 +112,10 @@ $cakeDescription = 'Projeto CodeRace';
 <footer class="footer">
     <div class="row">
         <div class="small-12 columns">
-            <p class="slogan">Projeto CodeRace</p>
+            <p class="slogan">Borá Lá</p>
             <p class="copywrite">Instituto Federal Farroupilha - Campus São Vicente do Sul</p>
-            <p class="copywrite">Jefferson Vantuir © <?= date('Y') ?></p>
-            <p class="copywrite">sup.aplicacao@gmail.com - (xx) 9999-999</p>
+            <p class="copywrite">Equipe Cake © <?= date('Y') ?></p>
+            <p class="copywrite">sup.aplicacao@gmail.com</p>
         </div>
     </div>
 </footer>

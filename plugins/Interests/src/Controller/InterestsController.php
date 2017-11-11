@@ -113,6 +113,13 @@ class InterestsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
+    public function userProfile($id)
+    {
+        $user = $this->Users->get($id);
+
+        $this->set(compact('user'));
+    }
+
     /**
      * Edit method
      *

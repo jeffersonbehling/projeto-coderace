@@ -51,7 +51,7 @@ class PhotosController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add($eventId = null)
+    public function add($eventId)
     {
         $photo = $this->Photos->newEntity();
         $photo->events_id = $eventId;
@@ -79,14 +79,12 @@ class PhotosController extends AppController
                 }
             }
             if ($this->Photos->save($photo)) {
-                $this->Flash->success(__('The photo has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                $this->Flash->success(__('Foto adicionada com sucesso ao evento'));
+                return $this->redirect(['plugin' => 'Interests', 'controller' => 'Interests', 'action' => 'view', $eventId]);
             }
-            $this->Flash->error(__('The photo could not be saved. Please, try again.'));
+            $this->Flash->error(__('Erro ao adicionar foto ao evento. Por favor, tente novamente.'));
         }
-        $events = $this->Photos->Events->find('list', ['limit' => 200]);
-        $phinxlog = $this->Photos->Phinxlog->find('list', ['limit' => 200]);
-        $this->set(compact('photo', 'events', 'phinxlog'));
+        $this->set(compact('photo'));
         $this->set('_serialize', ['photo']);
     }
 
