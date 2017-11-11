@@ -11,7 +11,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "../package.box"
   #config.vm.network "private_network", ip: "192.168.43.40"
-  config.vm.network "public_network", ip: "192.168.99.50"
+  config.vm.network "public_network"
   config.vm.synced_folder ".", "/var/www/html"
 
   config.vm.provider "virtualbox" do |v, override|
