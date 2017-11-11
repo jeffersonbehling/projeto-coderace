@@ -1,9 +1,14 @@
-![borala](https://github.com/jeffersonbehling/projeto-login-auth/blob/master/webroot/img/logo.png)
+![borala](https://github.com/jeffersonbehling/projeto-coderace/tree/master/webroot/img/logo.png)
 # Borá lá?
 
 ## Conceito
 
-O Borá Lá é um aplicativo que conecta um grupo de pessoas que querem realizar atividades semelhantes em determinado local por elas definidas.
+O Borá Lá é um aplicativo que conecta um grupo de pessoas que querem realizar atividades semelhantes na região, esse app foi desenvolvido pensado na região do vale do jaguari, aonde as cidades são pequenas e a quantidade de lugares para sair são pequenas.
+
+Exemplo: 
+* Bruno quer sair no sabado mas não tem nada acontecendo na cidade dele, então ele marca que tem interesse de sair, de ir beber na praça da cidadee ficar conversando
+* Fernanda e José tambem querem sair, eles abrem o Borá Lá e encontram o rolê do bruno e confirmam presença e entram no grupo do WhatsApp e interagem.
+* Eduarda ve que tem 3 pessoas com interesse de sair, mas não gosta de ir na praça, então ela cria que quer beber no bar da cidade.
 
 ## Iniciando
 
@@ -11,17 +16,19 @@ O Sistema irá disponibilizar para o usuário um campo de filtro no qual ele pod
 
 ## Estrutura
 
-O x é dividido em 3 partes:
+O Borá Lá é dividido em 3 partes:
 * Usuarios
 * Rolês
 * Locais
 
 ### Usuarios
+
 * Nome
 * E-mail
 * Gostos(aqui o usuario seleciona os seus gostos, essa informação irá aparecer no perfil dela)
 
 ### Rolês
+
 * Nome do rolê
 * Horario de inicio
 * Lugar
